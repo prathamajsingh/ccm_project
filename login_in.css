@@ -1,0 +1,514 @@
+#header 
+{
+    width: 100%; 
+    height:150px; 
+    background-color: #F4F4F4; 
+}
+.main_logo{
+    height: 150px;
+	float: left;
+	width: 15.00%;
+}
+.sub_logo{
+    height: 150px;
+    width: 85.00%;
+    float: right;
+}
+
+/* Add a black background color to the top navigation bar */
+
+.topnav {
+    width: 96%;
+    height: 50px;
+    float: left;
+
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #0e1a5c;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  width: 35%;
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 20%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+ .sb{
+     width: 4%;
+     height: 50px;
+     float: right;
+     background-color:  #e9e9e9;
+
+ }
+
+ .mySlides {
+   display: none;
+}
+
+.slideshow
+{
+  height: 608px;
+  width: 100%;
+  background: #a7a5a5;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+ 
+
+
+
+.maindiv{
+  width: 80%;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  top: 61.5%;
+  transform:translate(-50%,-50%);
+  padding-top: 200px;
+  background-size: 100% 100%;
+  box-shadow: 1px 2px 10px 5px white ;
+  animation:slider 9s infinite linear;
+}
+@keyframes slider{
+0%{ background-image: url('https://www.scai.in/wp-content/uploads/2020/02/6.jpg'); background-size: 100% 100%}
+35%{background-image: url('https://www.scai.in/wp-content/uploads/2020/02/IMG_3495-HDR-2.jpg');background-size: 100% 100% }
+75%{background-image: url('https://i.ytimg.com/vi/zYL3dfrx8cs/maxresdefault.jpg'); background-size: 100% 100%}
+100%{background-image: url('https://th.bing.com/th/id/R.1b57d5f38b90b9f4c8f7e62eacdaae9a?rik=G0WACXh6hCPl1A&riu=http%3a%2f%2fwww.scai.in%2fwp-content%2fuploads%2f2020%2f02%2fDJI_0131.jpg&ehk=1zR8kumLgubYVSqqltoWjBugCxrYuNQ0MwYxlkMxxk4%3d&risl=&pid=ImgRaw&r=0'); background-size: 100% 100%}
+}
+.maindiv a {
+position: absolute;
+top: 550px;
+left:400px;
+}
+
+#intro
+{
+  position: absolute;
+  top:800px;
+  text-align: center;
+  height: 200px;
+  background-color: #F7F7F7;
+  padding-top: 25px;
+  padding-left: 200px;
+  padding-right:200px ;
+  padding-bottom: 25px;
+}
+p {
+  color: #303133;
+  white-space: normal;
+  font-size: 24px;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 36px;
+}
+#name
+{
+  position: absolute;
+  top: 1000px;
+  text-align: center;
+  height: 150px;
+  width: 100%;
+
+
+}
+.ccm_name{
+  color: #303133;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:500%;
+  text-align: center;
+  padding-right: 200px;
+  padding-left: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+#guest_amen
+{
+  position: absolute;
+  top:1150px
+}
+#footer{
+  top: 1000px;
+  position: absolute;
+  background-color: #141618;
+  width: 100%;
+  height:100%;
+  right: 1px;
+}
+#upper{
+  height:5.5cm;
+}
+#line
+{
+  width: 100%;
+  align-self: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: #25282A;
+}
+#upper_left
+{
+  position: absolute;
+  width: 50%;
+  height: 6.00cm;
+  background-color: #141618;
+  padding-top: 2.5cm;
+  padding-left: 3.00cm;
+  float: left;
+}
+ .upper_left_content h5 {
+  font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;    
+  color: #ffffff;
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: 28px;
+  }
+  #upper_right{
+    position: absolute;
+    width: 50%;
+    height: 6.00cm;
+    background-color: #141618;
+    left: 50%;
+    padding-top: 2.75cm;
+    padding-left: 50px;
+  }
+
+  /*.email_id{
+    box-sizing: border-box;
+    border-top-color:#141618 ;
+    border-left-color: #141618;
+    border-right-color: #141618;
+    border-bottom-color: #ffffff;
+    ;
+  }*/
+  input[id="email_id"], textarea {
+    width: 400px;
+    background-color:#141618 ;
+    border-bottom-color: #ffffff;
+    border-top-color:#141618 ;
+    border-left-color: #141618;
+    border-right-color: #141618;
+    font-size: 22px;
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+  }
+
+  input[id="submit"], textarea{
+    width: 100px;
+    height: 40px;
+    color:#000000;
+    background-color: #ffffff;
+    font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+  border-color: none;
+  font-size: 22px;
+    
+  }
+  #lower {
+    top: 6.5cm;
+    position: absolute;
+    background-color: #141618;
+    height: 500px;
+    width:100%;
+  }
+  .lower_first{
+    position: absolute;
+
+    width: 25%;
+    height: 500px;
+    background-color: #141618 ;
+    float: left;
+    padding-top: 2cm;
+    padding-left: 2.7cm;
+    
+
+  }
+  .lower_first p{
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 19px;
+    text-align: left;
+    
+  }
+  .lower_second{
+    position: absolute;
+    width: 25%;
+    height: 500px;
+    left: 25%;
+    background-color: #141618 ;
+    padding-top: 0.5cm;
+    padding-left: 3cm;
+  }
+  .lower_second p{
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    padding-right:55% ;
+  }
+  ul
+  {
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    
+  }
+  a
+  {
+    font-style: italic;
+  }
+  .lower_second a:hover {
+    color: #928e8e;
+  }
+  .lower_third{
+    position: absolute;
+    width: 25%;
+    height: 500px;
+    left: 50%;
+    background-color: #141618 ;
+    padding-top: 0.5cm;
+    padding-left: 2cm;
+  }
+  .lower_third a:hover {
+    color: #928e8e;
+  }
+  .lower_third p{
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    padding-right: 55%;
+    
+  }
+  .lower_fourth{
+    position: absolute;
+    width: 25%;
+    height: 500px;
+    left: 75%;
+    background-color: #141618 ;
+    padding-top: 0.5cm;
+    padding-left: 1cm;
+  }
+  .lower_fourth a:hover {
+    color: #928e8e;
+  }
+  .lower_fourth p{
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    padding-right: 55%;
+    
+  }
+  #main_box
+  {
+    height: 800px;
+    padding-left: 400px;
+    padding-top:125px;
+    
+  }
+  #main_box .sub_box
+  {
+    border: #000000;
+    height: 600px;
+    width: 600px;
+    border-style: solid;
+  }
+  #upper_sub_box{
+    
+    height: 300px;
+    
+    width: 600px;
+
+  }
+  .upper_sub_box_right{
+    background-color: #dfd36a;
+    height: 300px;
+    width: 300px;
+    float: right;
+
+  }
+  .upper_sub_box_left
+  {
+    background-color: #dfd36a;
+    height: 300px;
+    width: 300px;
+    float: left;
+
+  }
+
+  #lower_sub_box{
+  
+    height: 300px;
+    
+    width: 600px;
+
+  }
+  .lower_sub_box_right{
+    background-color: #dfd36a;
+    height: 300px;
+    width: 300px;
+    float: right;
+
+  }
+  .lower_sub_box_left
+  {
+    background-color:#dfd36a;
+    height: 300px;
+    width: 300px;
+    float: left;
+
+  }
+  #sub_box img
+  {
+    
+    border: #000000;
+    border-style: solid;
+      height: 297px;
+      width: 297px;
+  }
+
+  .hovertext {
+    position: relative;
+    border-bottom: 1px dotted black;
+  }
+  
+  .hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 140px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: opacity 1s ease-in-out;
+  position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+  }
+  
+  .hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }
+  body {
+    background-image: url('corridor.png');
+    background-size: cover;
+  
+}
+  
+  
+
+
+
+
+
+  

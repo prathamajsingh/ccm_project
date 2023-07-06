@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="about_us.css" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div id="header">
+        <div class="main_logo">
+            <a href="homepage.html"><img src="ccmlogo.png" height="150px" width=auto ></a>
+        </div>
+        <div class="sub_logo">
+            <img src="ccmlogo2.jpg" height="150px" width=100%>
+        </div>
+    </div>
+    <div id="header2">
+    <div class="topnav">
+        <a  href="homepage.html">Home</a>
+        <a class="active" href="about_us.html">About Us</a>
+        <a href="loginpage.html">Login</a>
+        <a href="enquiry.php">Contact Us</a>
+        <input type="text" placeholder="Search..">
+    </div>
+    <div id="mySidenav" class="sidenav" style= "width:0px;">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>    
+    <div class="sb">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776;</span>
+    </div>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+    </div>
+    
+    <div class="about_us_image">
+      <img src="about_us.png" alt="" height="180px">
+    </div>
+    <div class="sarda_prof">
+      <div class="sarda_logo">
+        <img src="sarda_logo.jpg" height="180px" width="100%" alt="">
+      </div>
+      <div class="sarda_name"><h1 class="sarda_group">SARDA GROUPS OF INDUSTRIES</h1>
+      </div>
+    </div>
+
+    <div class="main_box">
+    <div class="image_slideshow">
+        <div class = "image fade">
+            <img src="marksandspencer.png" width="900px" height="600px" alt="Mountain Top">
+          </div>
+            
+          <div class = "image fade">
+            <img src="foodcourtname.png" width="900px" height="600px" alt="Mountain Top">
+          </div>
+          <div class = "image fade">
+            <img src="coor2.png" width="900px" height="600px" alt="Mountain Top">
+          </div>
+          
+    </div>
+    <script>
+      let index = 0;
+  displayImages();
+  function displayImages() {
+  let i;
+  const images = document.getElementsByClassName("image");
+  for (i = 0; i < images.length; i++) {
+  images[i].style.display = "none";
+  }
+  index++;
+  if (index > images.length) {
+  index = 1;
+  }
+  images[index-1].style.display = "block";
+  setTimeout(displayImages, 2000); 
+  }
+  
+  </script>
+    
+    
+    <div class="content">
+      <div class="main_content">
+        <h3 >CITY CENTER MALL</h3>
+        <p>The next time when you are looking for <br>one of the leading shopping malls all over Nashik don't 
+            forget to check out our name, CITY CENTER MALL. We are located in the Wine Capital of India that is 
+            the city of Nashik. Our services were incorporated on 12th August 2005 .</p>
+          <p>City Center Mall Pvt. Ltd. is majorly in Real Estate and Renting Business from <br>last 18 years and currently company operations
+            are active . 
+          </p>
+          <p>The Current Board Members & Directors are SHRIRANG KISANLAL SARDA, JAGDISH SHANKAR KULKARNI &
+            PARAG RAMPAL SINGH RATHOD . 
+          </p>
+          
+          
+      </div>
+    </div>
+    
+  </div>
+  
+
+
+    <footer id="footer">
+        <div id="upper">
+          <div id="upper_left">
+            <div class="upper_left_content">
+              <h5>Sign up for our newsletter</h5>
+            </div>
+          </div>
+          <div id="upper_right">
+            <form>
+              <label for="email_id"></label>
+              <input type="email" name="email" id="email_id" value="Email..">
+              </input>
+              
+              <input type="submit" value="Submit" id="submit"></input>
+            </form>
+            </div>
+          </div>
+        <div id="line">
+          <hr style="color: #25282A;">
+        </div>  
+        <div id="lower"> 
+          <div class="lower_first" >
+            <p>Untwadi Rd, Lavate Nagar, <br>
+              Parijat Nagar, Nashik, <br>
+              Maharashtra 422002</p>
+              <br>
+              <br>
+            <p>
+              T: 09225129632<br>
+            </p>
+            <p id="p1">E: helpdesk.ccmnashik@sarda.co.in</p>
+          </div>
+          <div class="lower_second">
+            <p>
+              EXPLORE
+            </p>
+            
+            <br>
+            <ul>
+              <li>
+                <a href="">Shop</a>
+              </li>
+              <li>
+                <a href="">Dine in</a>
+              </li>
+              <li>
+                <a href="">Entertainment</a>
+              </li>
+            </ul>
+          </div>
+          <div class="lower_third">
+            <p>
+              INFORMATION
+            </p>
+            
+            <br>
+            <ul>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li>
+                <a href="">Safety</a>
+              </li>
+              <li>
+                <a href="">Health Safety Policy</a>
+              </li>
+              <li>
+                <a href="">Awards</a>
+              </li>
+              <li>
+                <a href="">Events</a>
+              </li>
+              <li>
+                <a href="">News</a>
+              </li>
+            </ul>
+          </div>
+          <div class="lower_fourth">
+            <p>
+              LEGAL
+            </p>
+            
+            <br>
+            <ul>
+              <li>
+                <a href="">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </footer>
+  
+      
+      
+  
+      
+      
+          
+  </body>
+  </html>

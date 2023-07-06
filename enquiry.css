@@ -1,0 +1,524 @@
+#header 
+{
+    width: 100%; 
+    height:150px; 
+    background-color: #F4F4F4; 
+}
+.main_logo{
+    height: 150px;
+	float: left;
+	width: 15.00%;
+}
+.sub_logo{
+    height: 150px;
+    width: 85.00%;
+    float: right;
+}
+
+/* Add a black background color to the top navigation bar */
+
+.topnav {
+    width: 96%;
+    height: 50px;
+    float: left;
+
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #0e1a5c;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  width: 35%;
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 20%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+ .sb{
+     width: 4%;
+     height: 50px;
+     float: right;
+     background-color:  #e9e9e9;
+
+ }
+
+ 
+#footer{
+  top: 1500px;
+  position: absolute;
+  background-color: #141618;
+  width: 100%;
+  height:100%;
+}
+#upper{
+  height:5.5cm;
+}
+#line
+{
+  width: 100%;
+  align-self: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: #25282A;
+}
+#upper_left
+{
+  position: absolute;
+  width: 50%;
+  height: 6.00cm;
+  background-color: #141618;
+  padding-top: 2.5cm;
+  padding-left: 3.00cm;
+  float: left;
+}
+ .upper_left_content h5 {
+  font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;    
+  color: #ffffff;
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: 28px;
+  }
+  #upper_right{
+    position: absolute;
+    width: 50%;
+    height: 6.00cm;
+    background-color: #141618;
+    left: 50%;
+    padding-top: 2.75cm;
+    padding-left: 50px;
+  }
+
+  /*.email_id{
+    box-sizing: border-box;
+    border-top-color:#141618 ;
+    border-left-color: #141618;
+    border-right-color: #141618;
+    border-bottom-color: #ffffff;
+    ;
+  }*/
+  input[id="email__id"], textarea {
+    width: 400px;
+    background-color:#141618 ;
+    border-bottom-color: #ffffff;
+    border-top-color:#141618 ;
+    border-left-color: #141618;
+    border-right-color: #141618;
+    font-size: 22px;
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+  }
+
+  input[id="submit"], textarea{
+    width: 100px;
+    height: 40px;
+    color:#000000;
+    background-color: #ffffff;
+    font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+  border-color: none;
+  font-size: 22px;
+    
+  }
+  #lower {
+    top: 6.5cm;
+    position: absolute;
+    background-color: #141618;
+    height: 500px;
+    width:100%;
+  }
+  .lower_first{
+    position: absolute;
+
+    width: 25%;
+    height: 500px;
+    background-color: #141618 ;
+    float: left;
+    padding-top: 2cm;
+    padding-left: 2.7cm;
+    
+
+  }
+  .lower_first p{
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 19px;
+    text-align: left;
+    
+  }
+  .lower_second{
+    position: absolute;
+    width: 25%;
+    height: 500px;
+    left: 25%;
+    background-color: #141618 ;
+    padding-top: 0.5cm;
+    padding-left: 3cm;
+  }
+  .lower_second p{
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    padding-right:55% ;
+  }
+  ul
+  {
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    
+  }
+  a
+  {
+    font-style: italic;
+  }
+  .lower_second a:hover {
+    color: #928e8e;
+  }
+  .lower_third{
+    position: absolute;
+    width: 25%;
+    height: 500px;
+    left: 50%;
+    background-color: #141618 ;
+    padding-top: 0.5cm;
+    padding-left: 2cm;
+  }
+  .lower_third p{
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    padding-right: 55%;
+    
+  }
+  .lower_third a:hover {
+    color: #928e8e;
+  }
+  .lower_fourth{
+    position: absolute;
+    width: 25%;
+    height: 500px;
+    left: 75%;
+    background-color: #141618 ;
+    padding-top: 0.5cm;
+    padding-left: 1cm;
+  }
+  .lower_fourth a:hover {
+    color: #928e8e;
+  }
+  .lower_fourth p{
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    padding-right: 55%;
+    
+  }
+  .main_div{
+    top:200px;
+    width: 100%;
+    height: 1300px;
+    
+  }
+  .upper_main_div{
+    width: 100%;
+    height:450px;
+    background-color: #000000;
+    
+  }
+  .contact_us_logo{
+    position: absolute;
+    top:450px;
+    left: 100px;
+  }
+  .contact_us_logo h2{
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 52px;
+    text-align: left;
+  }
+  .upper_main_div img{
+    opacity: 0.6;
+  }
+  .lower_main_div{
+    height: 850px;
+    width: 100%;
+    background: #ffffff;
+  }
+  .lower_main_div_left{
+    height: 850px;
+    width: 40%;
+    float: left;
+    background: #ffffff;
+    padding-top:20px;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .lower_main_div_left_content{
+   background: #ffffff;
+   height: 850px;
+   width: 545px;
+   box-shadow: 1px 2px 10px 5px rgb(204, 204, 204);
+   border-radius: 30px;
+
+  }
+  .lower_main_div_left_content_first{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-top: 9px;
+    padding-left: 10px;
+    height: 33%;
+    width: 545px;
+    background: #ffffff;
+    position: relative;
+  }
+  .lower_main_div_left_content_second{
+    height: 33%;
+    width: 545px;
+    padding-left: 10px;
+    background: #ffffff;
+    position: relative;
+  }
+  .lower_main_div_left_content_third{
+    height: 30%;
+    width: 545px;
+    padding-left: 10px;
+    background: #ffffff;
+    position: relative;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+  }
+  .lower_main_div_left_content p{
+    color: #141618;
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 50px;
+  }
+  .lower_main_div_right{
+    position: relative;
+    height: 850px;
+    height: 850px;
+    width: 60%;
+    float: right;
+    background: #ffffff;
+    padding-top:10px;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .lower_main_div_right_content{
+    background: #ffffff;
+    height: 850px;
+     width: 825px;
+    box-shadow: 1px 2px 10px 5px rgb(204, 204, 204);
+    border-radius: 30px;
+  }
+
+
+
+
+  input[type=text], select, textarea {
+    width: 520px; /* Full width */
+    padding: 5px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-bottom-color: #141618;
+    border-top-color:#ffffff ;
+    border-left-color: #ffffff;
+    border-right-color: #ffffff;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+  }
+  .lower_main_div_right input[id="email_id"], textarea {
+    width: 520px; /* Full width */
+    padding: 5px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-bottom-color: #141618;
+    border-top-color:#ffffff ;
+    border-left-color: #ffffff;
+    border-right-color: #ffffff;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+  background: #FFFFFF;
+  font-size: 15px;
+  color: #000000;
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    height: 50px;
+    width: 100px;
+    background-color: #141618;
+    color: #141618;
+    padding: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+  font-size:20px;
+  color:#ffffff;
+  }
+  
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #dddddd;
+    color: black;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    height: 95%;
+    border-radius: 30px;
+    background-color: #ffffff;
+    padding-top: 18px;
+    padding-left: 30px;
+  }
+  
+  .lower_main_div_right_content h5{
+    color: #141618;
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    text-align: left;
+  }
+  .lower_main_div_right_content_upper{
+    height: 5%;
+    width: 100%;
+  }
+  .lower_main_div_right_content_upper h3{
+    padding-top: 10px;
+    color: #141618;
+    font-family: 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  input[id="email_id"], textarea {
+    width: 400px;
+    background-color:#141618 ;
+    border-bottom-color: #141618;
+    border-top-color:#141618 ;
+    border-left-color: #141618;
+    border-right-color: #141618;
+    font-size: 22px;
+    color: #141618;
+    font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+  }
+  .submit_button{
+    padding-left: 210px;
+  }
+
+
+
+  

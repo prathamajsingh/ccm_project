@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="admin_login.css" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
+</head>
+<body>
+    <div id="header">
+        <div class="main_logo">
+            <img src="ccmlogo.png" height="150px" width=auto >
+        </div>
+        <div class="sub_logo">
+            <img src="ccmlogo2.jpg" height="150px" width=100%>
+        </div>
+    </div>
+    <div id="header2">
+    <div class="topnav">
+        <a  href="homepage.html">Home</a>
+        <a href="about_us.css">About Us</a>
+        <a class="active" href="loginpage.html">Login</a>
+        <a href="enquiry.php">Enquiry</a>
+        <input type="text" placeholder="Search..">
+    </div>
+    <div id="mySidenav" class="sidenav" style= "width:0px;">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+    </div>    
+    <div class="sb">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776;</span>
+    </div>
+    <div class="main_box_nav">
+    </div> 
+        <nav class="main-nav">
+            <ul>
+                <li><a class="signin" href="#0">Sign in</a></li>
+                <li><a class="signup" href="#0">Sign up</a></li>
+            </ul>
+        </nav>
+        
+    
+        
+        <div class="user-modal">
+                <div class="user-modal-container">
+                    <ul class="switcher">
+                        <li><a href="#0">Sign in</a></li>
+                        <li><a href="#0">New account</a></li>
+                    </ul>
+        
+                    <div id="login">
+                        <form class="form">
+                            <p class="fieldset">
+                                <label class="image-replace email" for="signin-email">E-mail</label>
+                                <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                                <span class="error-message">An account with this email address does not exist!</span>
+                            </p>
+        
+                            <p class="fieldset">
+                                <label class="image-replace password" for="signin-password">Password</label>
+                                <input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="Password">
+                                <a href="#0" class="hide-password">Show</a>
+                                <span class="error-message">Wrong password! Try again.</span>
+                            </p>
+        
+                            <p class="fieldset">
+                                <input type="checkbox" id="remember-me" checked>
+                                <label for="remember-me">Remember me</label>
+                            </p>
+        
+                            <p class="fieldset">
+                                <input class="full-width" type="submit" value="Login">
+                            </p>
+                        </form>
+                        
+                        <p class="form-bottom-message"><a href="#0">Forgot your password?</a></p>
+                        <!-- <a href="#0" class="close-form">Close</a> -->
+                    </div>
+        
+                    <div id="signup">
+                        <form class="form">
+                            <p class="fieldset">
+                                <label class="image-replace username" for="signup-username">Username</label>
+                                <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+                                <span class="error-message">Your username can only contain numeric and alphabetic symbols!</span>
+                            </p>
+        
+                            <p class="fieldset">
+                                <label class="image-replace email" for="signup-email">E-mail</label>
+                                <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                                <span class="error-message">Enter a valid email address!</span>
+                            </p>
+        
+                            <p class="fieldset">
+                                <label class="image-replace password" for="signup-password">Password</label>
+                                <input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Password">
+                                <a href="#0" class="hide-password">Show</a>
+                                <span class="error-message">Your password has to be at least 6 characters long!</span>
+                            </p>
+        
+                            <p class="fieldset">
+                                <input type="checkbox" id="accept-terms">
+                                <label for="accept-terms">I agree to the <a class="accept-terms" href="#0">Terms</a></label>
+                            </p>
+        
+                            <p class="fieldset">
+                                <input class="full-width has-padding" type="submit" value="Create account">
+                            </p>
+                        </form>
+        
+                        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+                    </div>
+        
+                    <div id="reset-password">
+                        <p class="form-message">Lost your password? Please enter your email address.</br> You will receive a link to create a new password.</p>
+        
+                        <form class="form">
+                            <p class="fieldset">
+                                <label class="image-replace email" for="reset-email">E-mail</label>
+                                <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                                <span class="error-message">An account with this email does not exist!</span>
+                            </p>
+        
+                            <p class="fieldset">
+                                <input class="full-width has-padding" type="submit" value="Reset password">
+                            </p>
+                        </form>
+        
+                        <p class="form-bottom-message"><a href="#0">Back to log-in</a></p>
+                    </div>
+                    <a href="#0" class="close-form">Close</a>
+                </div>
+            </div>
+        <!-- partial -->
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+    </div>
+
+    <footer id="footer">
+      <div id="upper">
+        <div id="upper_left">
+          <div class="upper_left_content">
+            <h5>Sign up for our newsletter</h5>
+          </div>
+        </div>
+        <div id="upper_right">
+          <form>
+            <label for="email_id"></label>
+            <input type="email" name="email" id="email_id" value="Email..">
+            </input>
+            
+            <input type="submit" value="Submit" id="submit"></input>
+          </form>
+          </div>
+        </div>
+      <div id="line">
+        <hr style="color: #25282A;">
+      </div>  
+      <div id="lower"> 
+        <div class="lower_first" >
+          <p>Untwadi Rd, Lavate Nagar, <br>
+            Parijat Nagar, Nashik, <br>
+            Maharashtra 422002</p>
+            <br>
+            <br>
+          <p>
+            T: 09225129632<br>
+          </p>
+          <p id="p1">E: helpdesk.ccmnashik@sarda.co.in</p>
+        </div>
+        <div class="lower_second">
+          <p>
+            EXPLORE
+          </p>
+          
+          <br>
+          <ul>
+            <li>
+              <a href="">Shop</a>
+            </li>
+            <li>
+              <a href="">Dine in</a>
+            </li>
+            <li>
+              <a href="">Entertainment</a>
+            </li>
+          </ul>
+        </div>
+        <div class="lower_third">
+          <p>
+            INFORMATION
+          </p>
+          
+          <br>
+          <ul>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Safety</a>
+            </li>
+            <li>
+              <a href="">Health Safety Policy</a>
+            </li>
+            <li>
+              <a href="">Awards</a>
+            </li>
+            <li>
+              <a href="">Events</a>
+            </li>
+            <li>
+              <a href="">News</a>
+            </li>
+          </ul>
+        </div>
+        <div class="lower_fourth">
+          <p>
+            LEGAL
+          </p>
+          
+          <br>
+          <ul>
+            <li>
+              <a href="">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </footer>
+
+    
+    
+        
+</body>
+</html>
